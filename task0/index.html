@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nations</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="light">
+    <header>
+      <nav class="navbar">
+        <h1>Where in the world?</h1>
+        <span>
+          <img src="./icons/dark_mode.svg" alt="" class="mode-img" />
+        </span>
+      </nav>
+    </header>
+
+    <div class="btn-wrapper">
+      <img
+        src="icons/arrow_back_lm.svg"
+        alt="Back to previous page"
+        class="back-icon"
+      />
+      <button class="back-btn">Back</button>
+    </div>
+
+    <section class="home-top">
+      <div class="input-container">
+        <img src="./icons/search.svg" alt="" style="position: absolute" />
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search for a country..."
+        />
+      </div>
+      <div class="select-container">
+        <select name="searchNation" id="region-select">
+          <option value="Info" disabled selected>Search by region</option>
+          <option value="all">All</option>
+          <option value="Africa">Africa</option>
+          <option value="Antartica">Antartica</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </div>
+    </section>
+
+    <main>
+      <div id="countries-list"></div>
+    </main>
+
+    <div id="country-data"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+  .main-container {
+    padding: 24px;
+  }
+  
+  .section {
+    padding: 48px 0;
+  }
+  
+  .section-title {
+    font-size: 64px;
+    color: #BDBDBD;
+    font-weight: 200;
+    line-height: 64px;
+    margin-bottom: 24px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 48px;
+    }
+  }
+  

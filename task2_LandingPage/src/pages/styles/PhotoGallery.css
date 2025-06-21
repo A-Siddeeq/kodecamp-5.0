@@ -1,0 +1,26 @@
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-image:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Responsive: 5 columns on larger screens */
+  @media (min-width: 768px) {
+    .gallery-container {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  

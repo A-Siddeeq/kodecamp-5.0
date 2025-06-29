@@ -5,7 +5,7 @@
     padding: 3rem 1.5rem;
     background-color: #F9F9F9;
     gap: 2rem;
-    overflow: hidden; /* ✅ Contain all inner elements */
+    overflow: hidden;
   }
   
   .about-grid {
@@ -18,7 +18,7 @@
   
   .about-grid img {
     width: 100%;
-    height: 300px; /* ✅ Fixed height for consistency */
+    height: 300px; 
     object-fit: cover;
   }
   
@@ -75,11 +75,11 @@
     .about-grid {
       grid-template-columns: repeat(2, 1fr);
       width: 50%;
-      height: 465px; /* ✅ Set total grid height */
+      height: 465px; 
     }
   
     .about-grid img {
-      height: 100%; /* ✅ Force all images to fit within grid height */
+      height: 100%; 
       object-fit: cover;
     }
   

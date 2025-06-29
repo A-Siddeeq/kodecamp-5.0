@@ -6,81 +6,9 @@
     padding-bottom: 16px;
   }
   
-  .header-light {
-    font-size: 64px;
-    font-weight: 200;
-    line-height: 64px;
-    color: #BDBDBD;
-  }
-  
-  .header-bold {
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 64px;
-  }
-  
   .projects-list {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 32px;
   }
-  
-  .projects-navigation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 24px 0;
-  }
-  
-  @media (min-width: 768px) {
-    .projects-navigation {
-      flex-direction: row;
-      justify-content: center;
-      max-width: 570px;
-      margin: 24px auto;
-    }
-  }
-  
-  .projects-pagination {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 16px;
-  }
-  
-  @media (min-width: 768px) {
-    .projects-pagination {
-      margin-bottom: 0;
-      margin-right: 40px;
-    }
-  }
-  
-  .current-page {
-    color: #333;
-  }
-  
-  .total-pages {
-    color: #BDBDBD;
-  }
-  
-  .nav-buttons {
-    display: flex;
-    gap: 12px;
-  }
-  
-  .nav-button {
-    width: 53px;
-    height: 53px;
-    border: 2px solid #000;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-  
-  .nav-button.active {
-    background-color: #F9F9F9;
-  }
-  

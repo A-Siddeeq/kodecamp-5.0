@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/ProjectCard.css";
 
-const ProjectCard = ({ image, title, description, reverse = false }) => {
+const ProjectCard = ({ image, title, description }) => {
   return (
     <div className="project-card">
       <div className="project-image-wrapper">

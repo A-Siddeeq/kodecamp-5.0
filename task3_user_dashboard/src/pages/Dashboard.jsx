@@ -2,7 +2,7 @@ import React from "react";
 import Sidebar from "../components/dashboard/Sidebar";
 import TopReport from "../components/dashboard/TopReport";
 import Table from "../components/dashboard/Table";
-import "../Index.css";
+import "../index.css";
 
 const Dashboard = () => {
   return (

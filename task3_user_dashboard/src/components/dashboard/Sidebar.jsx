@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { LogoutButton } from "../Button";
-import settingsIcon from "../../assets/sidebar/settingsIcon.svg";
-import dasboardIcon from "../../assets/sidebar/dashboard.svg";
-import productIcon from "../../assets/sidebar/product.svg";
-import customerIcon from "../../assets/sidebar/customerIcon.svg";
-import incomeIcon from "../../assets/sidebar/incomeIcon.svg";
-import promoteIcon from "../../assets/sidebar/promoteIcon.svg";
-import helpIcon from "../../assets/sidebar/helpIcon.svg";
+import settingsIcon from "../../assets/sideBar/settingsIcon.svg";
+import dasboardIcon from "../../assets/sideBar/dashboard.svg";
+import productIcon from "../../assets/sideBar/product.svg";
+import customerIcon from "../../assets/sideBar/customerIcon.svg";
+import incomeIcon from "../../assets/sideBar/incomeIcon.svg";
+import promoteIcon from "../../assets/sideBar/promoteIcon.svg";
+import helpIcon from "../../assets/sideBar/helpIcon.svg";
 import { HiMenuAlt3 } from "react-icons/hi";
 import "../../../src/index.css";
 

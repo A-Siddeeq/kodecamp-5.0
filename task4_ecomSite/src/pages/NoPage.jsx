@@ -12,7 +12,13 @@ import { Link } from "react-router-dom";
 const NotFound = () => {
   return (
     <Container maxW="container.md" py={{ base: 16, md: 24 }}>
-      <VStack spacing={6} justify="center" align="center" textAlign="center">
+      <VStack
+        color="black"
+        spacing={6}
+        justify="center"
+        align="center"
+        textAlign="center"
+      >
         <Heading
           fontFamily="Inter"
           fontWeight="medium"

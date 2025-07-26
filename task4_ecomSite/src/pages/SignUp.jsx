@@ -28,10 +28,8 @@ const SignUp = () => {
     email: "",
     password: "",
   });
-
-  const validationSchema = signupValidationSchema;
-
   const { signup } = useAuth();
+  const validationSchema = signupValidationSchema;
 
   async function handleSubmit(values) {
     try {
@@ -44,10 +42,8 @@ const SignUp = () => {
       } else {
         setGeneralError(error.message || "Signup failed");
       }
-      console.error("Signup Error:", error);
     }
   }
-
   return (
     <Flex
       direction={{ base: "column", md: "row" }}

@@ -16,7 +16,7 @@ import {
 } from "@chakra-ui/react";
 import image from "../assets/authpages/image.png";
 
-const Login = () => {
+const Login = (email, password) => {
   const navigate = useNavigate();
   const [generalError, setGeneralError] = useState("");
   const { login } = useAuth();
@@ -25,7 +25,7 @@ const Login = () => {
   const handleSubmit = async (values, actions) => {
     try {
       await login(values.email, values.password);
-      navigate("/home");
+      navigate("/");
     } catch (error) {
       if (error.response && error.response.status === 401) {
         setGeneralError("Invalid email or password");

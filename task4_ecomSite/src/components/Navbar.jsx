@@ -205,7 +205,10 @@ const Navbar = () => {
                 <MenuItem>My Order</MenuItem>
                 <MenuItem>My Cancellations</MenuItem>
                 <MenuItem>My Reviews</MenuItem>
-                <MenuItem onClick={handleLogout}>Logout</MenuItem>
+                <MenuItem onClick={handleLogout}>
+                  {/* fix to navigate to home "/" if user is logged in */}
+                  {currentUser && <Link to="/">Logout</Link>}
+                </MenuItem>
               </MenuList>
             </Menu>
           )}

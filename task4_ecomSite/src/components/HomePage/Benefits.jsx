@@ -5,7 +5,7 @@ import customerservice from "../../assets/HomePage/featured/headphone.svg";
 import shield from "../../assets/HomePage/featured/shield.svg";
 
 const BenefitItem = ({ icon, title, description }) => (
-  <VStack spacing={2} align="center" textAlign="center">
+  <VStack spacing={2} align="center" textAlign="center" paddingTop={40}>
     <Flex
       align="center"
       justify="center"

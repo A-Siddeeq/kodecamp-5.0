@@ -18,7 +18,7 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import { useSelector, useDispatch } from "react-redux";
-import { removeFromCart } from "../redux/slices/cartSlice";
+import { removeFromCart, clearCart } from "../redux/slices/cartSlice";
 import { FaTimes } from "react-icons/fa";
 
 const Cart = () => {
@@ -36,7 +36,7 @@ const Cart = () => {
         Shopping Cart
       </Text>
 
-      {/* ✅ DESKTOP TABLE */}
+      {/* DESKTOP TABLE */}
       <Box display={{ base: "none", md: "block" }}>
         <Table variant="simple" size="md" color="gray.600">
           <Thead>
@@ -87,7 +87,7 @@ const Cart = () => {
         </Table>
       </Box>
 
-      {/* ✅ MOBILE VIEW */}
+      {/* MOBILE VIEW */}
       <Stack spacing={6} display={{ base: "flex", md: "none" }}>
         {cartItems.map((item, index) => (
           <Box
@@ -201,7 +201,14 @@ const Cart = () => {
             </HStack>
           </VStack>
 
-          <Button mt={4} colorScheme="red" w="full">
+          <Button
+            mt={4}
+            colorScheme="red"
+            w="full"
+            onClick={() => {
+              dispatch(clearCart());
+            }}
+          >
             Proceed to Checkout
           </Button>
         </Box>

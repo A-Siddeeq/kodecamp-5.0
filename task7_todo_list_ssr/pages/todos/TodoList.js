@@ -3,7 +3,7 @@ import { FcAddDatabase, FcDeleteDatabase } from "react-icons/fc";
 import { FaRegEdit } from "react-icons/fa";
 import { useRouter } from "next/router";
 
-export default function TodoList({ initialTodos }) {
+export default function TodoList({ initialTodos = [] }) {
   const [tasks, setTasks] = useState(initialTodos);
   const [editId, setEditId] = useState(null);
   const [editValue, setEditValue] = useState("");

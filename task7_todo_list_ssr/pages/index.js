@@ -1,15 +1,11 @@
 import TodoList from "./todos/TodoList";
 
-export async function getServerSideProps() {
-  const res = await fetch(
-    `${
-      process.env.VERCEL_URL
-        ? "https://" + process.env.VERCEL_URL
-        : "http://localhost:3000"
-    }/api/todos`
-  );
+export async function getServerSideProps(context) {
+  const protocol = context.req.headers["x-forwarded-proto"] || "http";
+  const host = context.req.headers.host;
+  const res = await fetch(`${protocol}://${host}/api/todos`);
   const todos = await res.json();
-  return { props: { todos: todos || [] } };
+  return { props: { todos } };
 }
 
 export default function Home({ todos }) {
